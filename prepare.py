@@ -3,7 +3,7 @@ from PIL import Image, ImageOps
 Image.MAX_IMAGE_PIXELS=None
 W,H=1872,1404
 os.makedirs("out",exist_ok=True); th=[]
-B={"carceri-xiv":.04,"kumoi-cherry":.04,"lonely-tower":.09,"montmajour":.09,"three-trees":.05,"kambara-snow":.02,"pines-left":.06,"pines-right":.06}
+B={"carceri-xiv":.04,"kumoi-cherry":.04,"lonely-tower":.09,"montmajour":.09,"three-trees":.05,"kambara-snow":.02,"pines-left":.06,"pines-right":.06,"gotenyama-cherry":.05,"ishiyama-moon":.11,"takanawa-moon":.04,"grande-jatte":.02}
 for f in sorted(glob.glob("raw/*.jpg")):
     n=os.path.basename(f)
     im=ImageOps.grayscale(Image.open(f))

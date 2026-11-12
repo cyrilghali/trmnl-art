@@ -1,4 +1,4 @@
-{% assign names = "kumoi-cherry,pines-left,two-men-moon,great-wave,three-trees,kambara-snow,lonely-tree,carceri-xiv,pine-forest,dnieper-moon,montmajour,pines-right,abbey-oakwood,lonely-tower" | split: "," %}
+{% assign names = "kumoi-cherry,red-fuji,magpie,almond-blossom,pines-left,poppy-field,takanawa-moon,mortefontaine,kambara-snow,water-lilies,gotenyama-cherry,wheat-cypresses,pine-forest,ishiyama-moon,grande-jatte,pines-right,rhone-stars" | split: "," %}
 {% assign count = names | size %}
 {% assign hour = "now" | date: "%s" | divided_by: 3600 %}
 {% assign pick = hour | modulo: count %}
