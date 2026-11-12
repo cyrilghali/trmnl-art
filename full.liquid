@@ -1,0 +1,7 @@
+{% assign names = "kumoi-cherry,pines-left,two-men-moon,great-wave,three-trees,kambara-snow,lonely-tree,carceri-xiv,pine-forest,dnieper-moon,montmajour,pines-right,abbey-oakwood,lonely-tower" | split: "," %}
+{% assign count = names | size %}
+{% assign hour = "now" | date: "%s" | divided_by: 3600 %}
+{% assign pick = hour | modulo: count %}
+<div class="layout" style="padding: 0;">
+  <img class="image image-dither" src="https://raw.githubusercontent.com/cyrilghali/trmnl-art/main/img/{{ names[pick] }}.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+</div>

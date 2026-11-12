@@ -1,0 +1,8 @@
+---
+strategy: polling
+polling_verb: get
+polling_url: https://raw.githubusercontent.com/cyrilghali/trmnl-art/main/manifest.json
+name: Art
+no_screen_padding: 'yes'
+dark_mode: 'no'
+refresh_interval: 60
