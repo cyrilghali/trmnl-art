@@ -1,7 +1,7 @@
 ---
 strategy: polling
 polling_verb: get
-polling_url: https://raw.githubusercontent.com/cyrilghali/trmnl-art/main/manifest.json
+polling_url: https://timeapi.io/api/time/current/zone?timeZone=UTC
 name: Art
 no_screen_padding: 'yes'
 dark_mode: 'no'
