@@ -1,4 +1,4 @@
-{% assign names = "kumoi-cherry,red-fuji,magpie,almond-blossom,pines-left,poppy-field,takanawa-moon,mortefontaine,kambara-snow,water-lilies,gotenyama-cherry,wheat-cypresses,pine-forest,ishiyama-moon,grande-jatte,pines-right,rhone-stars" | split: "," %}
+{% assign names = "ambassadors,arnolfini,art-of-painting,astronomer,babel,belshazzar,big-fish,carnival-lent,cheat-diamonds,chess-players,children-games,conjurer,dust-motes,empyrean,false-perspective,flammarion,garden-delights,hilanderas,hope,icarus,kuniyoshi-face,librarian,melencolia,meninas,monk-by-sea,moonwatchers,painter-studio,philosopher,proverbs,redon-eye,rhinoceros,seven-sins,ship-of-fools,tempest,vegetable-gardener,wanderer,where-do-we-come-from,wife-mother-in-law" | split: "," %}
 {% assign count = names | size %}
 {% assign hour = "now" | date: "%s" | divided_by: 3600 %}
 {% assign pick = hour | modulo: count %}
